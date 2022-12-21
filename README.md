@@ -8,7 +8,7 @@ This example demonstrates how to access the external QSPI Flash S25FL064LABNFI04
 
 ## Requirements
 
-- [ModusToolbox™ software](https://www.cypress.com/products/modustoolbox-software-environment) v2.4
+- [ModusToolbox™ software](https://www.cypress.com/products/modustoolbox-software-environment) v3.0
 
 ## The Provisioning of the RDK3
 
