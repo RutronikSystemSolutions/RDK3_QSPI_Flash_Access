@@ -14,7 +14,7 @@
             <WriteEnable>true</WriteEnable>
             <Encrypt>false</Encrypt>
             <DataSelect>QUAD_SPI_DATA_0_3</DataSelect>
-            <MemoryConfigsPath>D:/Programs/mtw/RDK3_QSPI_Flash_Access/bsps/TARGET_RDK3/config/APS1604M-3SQR-ZR.cymem</MemoryConfigsPath>
+            <MemoryConfigsPath>../config/APS1604M-3SQR-ZR.cymem</MemoryConfigsPath>
             <ConfigDataInFlash>true</ConfigDataInFlash>
             <MergeTimeout>CY_SMIF_MERGE_TIMEOUT_DISABLED</MergeTimeout>
         </SlotConfig>
