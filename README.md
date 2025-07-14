@@ -6,15 +6,13 @@ This example demonstrates how to access the external QSPI Flash S25FL064LABNFI04
 
  <img src="images/rdk3_top.jpg" style="zoom:20%;" />
 
+**Infineon has discontinued the PSOC™ 64 Secured MCU product line. As a result, the CYB06447BZI-BLD53 MCU used in the RDK3 is not recommended for new designs. The Infineon CY8C6347BZI-BLD53 MCU may be considered a suitable alternative.**
+
 ## Requirements
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v3.x** [built with **v3.0**]
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v2025.4.0** [built with **v3.0**]
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v3.2**: 
-
-1. The [Python](https://www.python.org/) has to be installed manually on Windows OS.
-2. Make sure the Python installation is added to the path variable. 
-3. Use this command to install the [cysecuretools](https://pypi.org/project/cysecuretools/) package:
+- The [Python](https://www.python.org/) has to be installed manually on Windows OS. Make sure the Python installation is added to the path variable. Use this command to install the [cysecuretools](https://pypi.org/project/cysecuretools/) package:
 
 ```
 pip install cysecuretools
@@ -33,6 +31,8 @@ The “[Secure Policy Configurator](https://www.infineon.com/dgdl/Infineon-Modus
 The CYB06447BZI-BLD53 MCU must be powered from a 2.5V power source to be able to complete the provisioning. The RDK3 has an SMPS [Switching Mode Power Supply] which can be easily adjusted to provide 3.3V or 2.5V to the MCU by switching the slide-switch “SW1” on the bottom side of the board. 
 
 <img src="images/voltage_switch.jpg" style="zoom:50%;" />
+
+The default keys and policies also might be downloaded from here: [RDK3 RUTRONIK DEMO KEYS](https://github.com/RutronikSystemSolutions/RDK3_Documents/tree/main/RDK3%20RUTRONIK%20DEMO%20Keys)
 
 ## Using the code example
 
@@ -148,13 +148,13 @@ For a list of supported IDEs and more details, see the "Exporting to IDEs" secti
 
 This is a typical external flash test code example. The defined `PACKET_SIZE` amount of bytes is erased and then written with a defined pattern `USER_DATA`. 
 
-After all, bytes are written then the memory is read byte by byte and compared with a defined pattern. If all bytes match the pattern the test ends with the status PASS, otherwise it ends with FAIL.
+After all, the bytes are written, then the memory is read byte by byte and compared with a defined pattern. If all bytes match the pattern, the test ends with the status PASS; otherwise, it ends with FAIL.
 
 <img src="images/debug_output.png" style="zoom:100%;" />
 
 ### Debugging
 
-If you successfully have imported the example, the debug configurations are already prepared to use with a the KitProg3, MiniProg4, or J-link. Open the ModusToolbox™ perspective and find the Quick Panel. Click on the desired debug launch configuration and wait for the programming to complete and the debugging process to start.
+If you have successfully imported the example, the debug configurations are already prepared to use with the KitProg3, MiniProg4. Open the ModusToolbox™ perspective and find the Quick Panel. Click on the desired debug launch configuration and wait for the programming to complete and the debugging process to start.
 
 <img src="images/debug_start.png" style="zoom:100%;" />
 
